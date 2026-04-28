@@ -4,6 +4,8 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Windows;
+using System.Linq;
+using System.Windows.Input;
 
 namespace AppWPF {
     public partial class MainWindow : Window {
@@ -29,6 +31,28 @@ namespace AppWPF {
                 gridPessoas.ItemsSource = lista;
             } catch (Exception ex) {
                 MessageBox.Show("Erro ao buscar dados: " + ex.Message);
+            }
+        }
+
+        // valida se o telefone é uma string (o usuário só consegue digitar números)
+        private void TxtTelefone_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !e.Text.All(char.IsDigit);
+        }
+
+        private void TxtTelefone_Pasting(object sender, DataObjectPastingEventArgs e)
+        {
+            if (e.DataObject.GetDataPresent(typeof(string)))
+            {
+                string text = (string)e.DataObject.GetData(typeof(string));
+                if (!text.All(char.IsDigit))
+                {
+                    e.CancelCommand();
+                }
+            }
+            else
+            {
+                e.CancelCommand();
             }
         }
 
