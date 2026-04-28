@@ -60,7 +60,13 @@ namespace AppWPF {
         async void Add_Click(object sender, RoutedEventArgs e) {
             try {
                 if (string.IsNullOrEmpty(txtNome.Text) || string.IsNullOrEmpty(txtSobrenome.Text) || string.IsNullOrEmpty(txtTelefone.Text)) {
-                    MessageBox.Show("Preenche todos os campos antes de salvar!");
+                    MessageBox.Show("Preencha todos os campos para prosseguir!");
+                    return;
+                }
+                
+                if (txtTelefone.Text.Length != 11)
+                {
+                    MessageBox.Show("O telefone deve ter exatamente 11 dígitos!");
                     return;
                 }
 
@@ -90,7 +96,7 @@ namespace AppWPF {
                 if (selecionado != null) {
                     // nao deixa atualizar se algum campo tiver vazio
                     if (string.IsNullOrEmpty(txtNome.Text) || string.IsNullOrEmpty(txtSobrenome.Text) || string.IsNullOrEmpty(txtTelefone.Text)) {
-                        MessageBox.Show("Preenche todos os campos antes de atualizar!");
+                        MessageBox.Show("Preencha todos os campos para prosseguir!");
                         return;
                     }
 
