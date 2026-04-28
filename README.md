@@ -87,4 +87,4 @@ https://apiregistro-h4epbvcmend2cvcq.brazilsouth-01.azurewebsites.net/api/person
 
 ## Autor
 
-Gabriel Rocha
+Gabriel Francisco Rocha
