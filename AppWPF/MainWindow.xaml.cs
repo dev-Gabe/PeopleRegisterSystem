@@ -9,8 +9,8 @@ namespace AppWPF {
     public partial class MainWindow : Window {
         // cliente pra falar com a api
         HttpClient client = new HttpClient();
-        string url = "http://localhost:5006/api/persons";
-        
+        // string url = "http://localhost:5006/api/persons"; Troquei para azure
+        string url = "https://apiregistro-h4epbvcmend2cvcq.brazilsouth-01.azurewebsites.net/api/persons";
         // pra nao dar erro de letra maiuscula no json
         JsonSerializerOptions options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
 

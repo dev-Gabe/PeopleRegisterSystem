@@ -1,0 +1,10 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log

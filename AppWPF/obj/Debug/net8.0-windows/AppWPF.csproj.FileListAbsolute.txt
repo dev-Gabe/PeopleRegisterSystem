@@ -17,3 +17,4 @@ C:\Users\gabri\Desktop\Portfolio\WPF + C#\ASP .NET WPF\AppWPF\obj\Debug\net8.0-w
 C:\Users\gabri\Desktop\Portfolio\WPF + C#\ASP .NET WPF\AppWPF\obj\Debug\net8.0-windows\AppWPF.pdb
 C:\Users\gabri\Desktop\Portfolio\WPF + C#\ASP .NET WPF\AppWPF\obj\Debug\net8.0-windows\AppWPF.genruntimeconfig.cache
 C:\Users\gabri\Desktop\Portfolio\WPF + C#\ASP .NET WPF\AppWPF\obj\Debug\net8.0-windows\ref\AppWPF.dll
+C:\Users\gabri\Desktop\Portfolio\WPF + C#\ASP .NET WPF\AppWPF\obj\Debug\net8.0-windows\AppWPF.sourcelink.json
